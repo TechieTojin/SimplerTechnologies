@@ -1,0 +1,64 @@
+@import 'bootstrap/scss/bootstrap';
+
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.auth-container {
+  max-width: 400px;
+  width: 100%;
+}
+
+.auth-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  
+  .card-body {
+    padding: 2rem;
+  }
+
+  h2 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-control {
+    border-radius: 25px;
+    padding: 0.75rem 1.5rem;
+    
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+      border-color: #667eea;
+    }
+  }
+
+  .btn-primary {
+    border-radius: 25px;
+    padding: 0.75rem;
+    background-color: #667eea;
+    border-color: #667eea;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #5a67d8;
+      border-color: #5a67d8;
+    }
+  }
+
+  a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #5a67d8;
+      text-decoration: underline;
+    }
+  }
+} 
